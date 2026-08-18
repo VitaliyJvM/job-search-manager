@@ -66,7 +66,7 @@ make start
 
 The services will start in the background:
 - PostgreSQL will run via Docker
-- The API starts on **http://localhost:8080**. Flyway will apply the migration automatically.
+- The API starts on **http://localhost:8081**. Flyway will apply the migration automatically.
 - The UI starts on **http://localhost:5173** and proxies `/api` calls to the backend.
 
 To view the live logs from both the backend and frontend, run:

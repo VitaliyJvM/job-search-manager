@@ -38,8 +38,8 @@ stop:
 	fi
 	@echo "Stopping PostgreSQL..."
 	@docker compose stop
-	@echo "Force killing any lingering processes on ports 8080 and 5173..."
-	@lsof -i :8080 -t | xargs kill -9 2>/dev/null || true
+	@echo "Force killing any lingering processes on ports 8081 and 5173..."
+	@lsof -i :8081 -t | xargs kill -9 2>/dev/null || true
 	@lsof -i :5173 -t | xargs kill -9 2>/dev/null || true
 	@echo "All services stopped."
 
